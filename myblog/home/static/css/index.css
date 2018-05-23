@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    background-color: #f6f6f6;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+/* --------Navbar--------*/
+.navbar-brand {
+    font-size: 14px;
+    color: #fff !important;
+    padding: 0 2rem;
+}
+.bg-light {
+    background-color: black !important;   
+    width:100vw;    
+}
+.navbar-toggler {
+    background-color: #fff;
+}
+.dropdown-menu {
+    background-color: #000;
+}
+.nav-item a {
+    color: #fff !important;
+}
+.nav-item {
+    font-size: 14px;
+    padding-right: 2rem;
+}
+.dropdown-item:hover {
+    background-color: #000;
+    color: red !important;
+}
+.title-area {
+    border-bottom: solid 2px #000;
+}
+.title-area a {
+    text-decoration: none;
+    color: #000;
+    font-family: raleway,sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 1.3rem 0;
+}
+.title-area a:hover {
+    text-decoration: none;
+}
+/*----------nav----------*/
+.nav {
+    background-color: #fff;
+}
+.myprofile {
+    background-color: #222;
+    color: #fff;
+    padding: 5px 0;
+}
+.icon {
+    padding: 0;
+}
+.icon li {
+    display: inline-block;
+}
+.icon li a{
+    display: inline-flex;
+    background-color: #eee !important;
+    border-radius: 0;
+    color: #222 !important;
+    border: 0 #fff solid !important;
+    font-size: 25px;
+    padding: 14px;
+}
+.icon li a:hover {
+    text-decoration: none;
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.icon li a i{
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}

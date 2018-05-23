@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/index.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome-all.css'%}" type="text/css">
+    <title>{% block title %} {% endblock  %}</title>
+</head>
+<body>  
+    <div class="container-fluid" style="min-height:10%">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/home">HOME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>         
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about">ABOUT <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WEB</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                LINK
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>  
+    <div class="container" style="min-height:85%">
+        <div class="row title-area">
+            <a href="/home">thienhoa.net</a>
+        </div>        
+        </br>
+        <div class="row">
+            <div class="col-sm-9">
+                {% block content %}
+        
+                {% endblock content %}
+            </div>
+            <div class="col-sm-3 nopadding">
+                <section class="img-profile">
+                        <center><p class="myprofile">MY PROFILE</p></center>
+                        <center><img src="{% static 'images/hoa.jpg' %}" alt="thienhoa" class="responsive-img" style="max-height:150px"></center>
+                </section>   
+            </br>
+                <section class="profile">
+                    <div class="bs-sliderbar">
+                        <ul class="nav flex-column">
+                            <li><a href="/home">Thông tin cá nhân</a></li>
+                            <li><a href="./blog">Bài viết </a></li>
+                            <li><a href="./contact">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </br>
+                <section class="icon-pfofile">
+                    <div class="wrap">
+                        <center>
+                            <ul class="icon">
+                                <li class="icon-facebook"><a href="https://www.facebook.com/hoatt1097"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="icon-twitter"><a href="#"><i class="fab fa-twitter"></i>                                </a></li>
+                                <li class="icon-google-plus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li class="icon-google-drive"><a href="#"><i class="fab fa-google-drive"></i></a></li>   
+                                <li class="icon-google-drive"><a href="#"><i class="fab fa-github-square"></i></a></li>   
+                            </ul>
+                        </center>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer style="min-height:5%;text-align:right">
+        <div class="container-fluid">
+            <a href="https://www.facebook.com/hoatt1097">Facebook</a>|<a href="#">Twitter</a>|<a href="#">Google</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
